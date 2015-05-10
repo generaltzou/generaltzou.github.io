@@ -1,0 +1,90 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#logo {
+  position: relative;
+  left: 10px;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+#header-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  margin-bottom: 25px;
+  z-index: 9999;
+}
+
+#hero {
+  position: relative;
+  background-image: url(images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 187px;
+  top: 50px;
+  margin-bottom: 80px;
+}
+
+#mask {
+  position: absolute;
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
+  height: 100%;
+}
+
+#mask div {
+  position: absolute;
+  font-size: 22px;
+  color: white;
+  right: 20px;
+  bottom: 25px;
+  width: 270px;
+}
+
+#header-text {
+  position: relative;
+  left: 15px;
+  top: 14px;
+  color: white;
+  font-size: 18px;
+}
+
+#watch-one {
+  max-width: 363px;
+  max-height: 497px;
+  width: 100%;
+}
+
+#black-watch {
+  background-image: url(images/display_hero_medium.jpg);
+  background-size: cover;
+  height: 355px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+#buy-now {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: linear-gradient(#3baee7, #08c);
+  border-color: #137ec6;
+  border-top-color: #1992da;
+  border-bottom-color: #0d6ab2;
+  color: #fff;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0 11px;
+  line-height: 22px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
