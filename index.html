@@ -1,42 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width">
-    <!-- Bootstrap CSS -->
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>300: Rise of an Empire</title>
+
+    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="start.css">
+
+    <!-- Application CSS and fonts -->
+    <link rel="stylesheet" href="styles/main.css">
   </head>
-  
-  
+
   <body>
-    <div id="header-bar">
-      <img id="logo" src="images/apple.svg">
-      <span id="header-text">Apple Watch</span>
-      <a id="buy-now">Buy Now</a>
-    </div> <!-- /.header-bar -->
+    <!-- Navigational header -->
+    <div id="nav-header">
+      <span></span>
+      <span><a class="active" href="index.html">Home</a></span>
+      <span><a href="gallery.html">Gallery</a></span>
+      <span><a href="http://www.google.com">Contact</a></span>
+    </div>
 
-    <div id="hero">
-      <div id="mask">
-        <div>The most personal device we've ever created.</div>
-      </div>
-    </div> <!-- /.hero -->
+    <!-- Hero poster image -->
+    <div id="hero"></div>
 
-    <div class="container">
+    <div id="movies-container" class="container">
 
+      <!-- Narrative row -->
       <div class="row">
-        <div class="col-xs-6">
-          <img id="watch-one" src="images/classicleather_detail_medium.jpg">
+        <div class="col-xs-12 narrative">Based on Frank Miller's latest graphic novel Xerxes and told in the breathtaking visual style of the blockbuster "300," this new chapter of the epic saga takes the action to a fresh battlefield-on the sea-as Greek general Themistocles (Sullivan Stapleton) attempts to unite all of Greece by leading the charge that will change the course of the war.</div>
+      </div>
+
+      <!-- YouTube player row -->
+      <div class="row">
+        <div class="col-xs-12">
+          <iframe id="ytplayer" type="text/html" src="http://www.youtube.com/embed/G3Rzy7YqUVU?controls=0&showinfo=0&origin=http://example.com" frameborder="0"></iframe>
         </div>
-        <div class="col-xs-6">Lorem ipsum dolor sit amet, ex usu partiendo prodesset, cu deseruisse deterruisset mel, sea modo vitae temporibus no. Numquam menandri vim ex. Te usu deleniti suscipiantur. Vel euismod definitiones an, legere appareat te mea, no libris diceret est.</div>
       </div>
 
-      
-      <div id="black-watch">
-      </div>
-      
+      <!-- Production info table -->
+      <div class="row">
 
-    </div> <!-- /.container -->
+        <div class="col-xs-12 col-sm-10 narrative">
+
+            <div class="row">
+              <div class="col-xs-4 col-sm-3">
+                <div>Rating</div>
+              </div>
+
+              <div class="col-xs-8 col-sm-7">
+                <div>R for strong sustained sequences of stylized bloody violence throughout, a sex scene, nudity and some language</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-4 col-sm-3">
+                <div>Genre</div>
+              </div>
+              <div class="col-xs-8 col-sm-7">
+                <div>Drama, Action & Adventure</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-4 col-sm-3">
+                <div>Written By</div>
+              </div>
+              <div class="col-xs-8 col-sm-7">
+                <div>Frank Miller, Zack Snyder, Kurt Johnstad</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-4 col-sm-3">
+                <div>In Theaters</div>
+              </div>
+              <div class="col-xs-8 col-sm-7">
+                <div>Mar 7, 2014 Wide</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-4 col-sm-3">
+                <div>Box Office</div>
+              </div>
+              <div class="col-xs-8 col-sm-7">
+                <div>$106.6M</div>
+              </div>
+            </div>
+     
+        </div>
+
+      </div> <!-- Production info table -->
+
+      
+      <!-- Horizontal image gallery row -->
+      <div class="row">
+        <div class="gallery" class="col-xs-4">
+          <ul>
+            <li><img src="images/gallery1.jpg"></li>
+            <li><img src="images/gallery2.jpg"></li>
+            <li><img src="images/gallery3.jpg"></li>
+            <li><img src="images/gallery4.jpg"></li>
+            <li><img src="images/gallery5.jpg"></li>
+            <li><img src="images/gallery6.jpg"></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="scripts/zepto.min.js"></script>
   </body>
-
 </html>

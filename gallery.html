@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Movies Browser</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Application CSS -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles/gallery.css">
+  </head>
+
+  <body>
+
+    <div id="movies-header">
+      <span></span>
+      <span><a href="index.html">Home</a></span>
+      <span><a class="active" href="gallery.html">Gallery</a></span>
+      <span><a href="http://www.google.com">Contact</a></span>
+    </div>
+
+    <div id="hero"></div>
+
+    <hr>
+
+    <div id="movies-container" class="container">
+      
+      <!-- Row 1 -->
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="movie-thumbnail" style="background-image: url(images/1.jpg)">
+            <div class="preview-mask">
+              <div class="title">Ice Age</div>
+              <div class="teaser">When Sid accidentally discovers an underground world populated by dinosaurs, he steals three dino eggs so that he, too, can become a "mommy."</div>
+              <div class="more-info"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="movie-thumbnail" style="background-image: url(images/2.jpg)">
+            <div class="preview-mask">
+              <div class="title">Inception</div>
+              <div class="teaser">Visionary filmmaker Christopher Nolan (Memento, The Dark Knight) writes and directs this psychological sci-fi action film about a thief who possesses the power to enter into the dreams of others.</div>
+              <div class="more-info"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="movie-thumbnail" style="background-image: url(images/3.jpg)">
+            <div class="preview-mask">
+              <div class="title">Mr. Peabody & Sherman</div>
+              <div class="teaser">Mr. Peabody, the most accomplished dog in the world, and his mischievous boy Sherman, use their time machine - the WABAC - to go on the most outrageous adventures known to man or dog.</div>
+              <div class="more-info"></div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end row -->
+
+      <!-- Row 2 -->
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="movie-thumbnail" style="background-image: url(images/4.jpg)"></div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="movie-thumbnail" style="background-image: url(images/5.jpg)"></div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="movie-thumbnail" style="background-image: url(images/6.jpg)"></div>
+        </div> 
+      </div> <!-- end row -->
+
+      <!-- Row 3 -->
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="movie-thumbnail" style="background-image: url(images/7.jpg)"></div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="movie-thumbnail" style="background-image: url(images/8.jpg)"></div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="movie-thumbnail" style="background-image: url(images/9.jpg)"></div>
+        </div>
+      </div> <!-- end row -->
+
+
+    </div> <!-- /container -->
+
+    <script src="scripts/zepto.min.js"></script>
+
+    <script>
+
+      $('.movie-thumbnail').on('tap', function(e) {
+        $(e.target).children('.preview-mask').css('-webkit-transform', 'translateY(0)');
+        $(e.target).children('.preview-mask').css('transform', 'translateY(0)');
+        
+      });
+
+      $('.more-info').on('tap', function(e) {
+        $(e.target).parent().css('-webkit-transform', 'translateY(-100%)');
+        $(e.target).parent().css('transform', 'translateY(-100%)');
+      });
+
+    </script>
+  </body>
+</html>
