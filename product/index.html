@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Required to properly zoom the viewport on mobile. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required to properly zoom the viewport on mobile. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Parse</title>
+  <title>Parse</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -14,45 +14,64 @@
 </head>
 <body>
 
+  <!-- Header with Parse text -->
   <div id="nav-header">Parse</div>
-
     <div id="main-container" class="container">
       
+      <!-- Centered gif image -->
       <div class="row">
+        <!-- Remember the .center class needs to be applied to the PARENT of the element
+             you wish to be centered! -->
         <div class="col-xs-12 center">
           <img id="logo-image" src="assets/morph.gif">
         </div>
       </div>
       
+      <!-- Centered headline text -->
       <div class="row">
+        <!-- Centering text works like this as the <div> is technically the text's parent -->
         <div class="col-xs-12 center" id="headline-text">Build your perfect app on any platform.</div>  
       </div>
             
+      <!-- Centered narrative text -->
       <div class="row">
         <div class="col-xs-12 center" id="narrative-text">Focus on creating amazing user experiences and forget complex infrastructure. Instantly add a powerful cloud database, push notification services, and analytics tracking to your app. Choose from over thirteen native SDKs for mobile, desktop, and IoT devices and discover all that Parse has to offer.</div>
       </div>
+      
     </div>
 
     <div id="customer-container" class="container">
+      <!-- Centered testimony text -->
       <div class="row">
         <div id="testimony" class="col-xs-12 center">
           Loved by over 2 million people at 120,000 businesses around the world.
         </div>
       </div>
 
+      <!-- Row of customers -->
       <div class="row center customers">
-        <div class="col-sm-4"><img src="assets/cbs.png"></div>
-        <div class="col-sm-4"><img src="assets/invision.png"></div>
-        <div class="col-sm-4"><img src="assets/simtable.png"></div>
+        <div class="col-sm-4"><img src="assets/atlassian.png"></div>
+        <div class="col-sm-4"><img src="assets/cmb.png"></div>
+        <div class="col-sm-4"><img src="assets/etoro.png"></div>
       </div>
 
+      <!-- Another row of customers -->
       <div class="row center customers">
-        <div class="col-sm-4"><img src="assets/citrix.png"></div>
-        <div class="col-sm-4"><img src="assets/peardeck.png"></div>
-        <div class="col-sm-4"><img src="assets/roll20.png"></div>
+        <div class="col-sm-4"><img src="assets/instacart.png"></div>
+        <div class="col-sm-4"><img src="assets/jawbone.png"></div>
+        <div class="col-sm-4"><img src="assets/kanjoya.png"></div>
+      </div>
+
+      <!-- Why not another while we're at it? -->
+      <div class="row center customers">
+        <div class="col-sm-4"><img src="assets/tweetwall.png"></div>
+        <div class="col-sm-4"><img src="assets/coderpad.png"></div>
+        <div class="col-sm-4"><img src="assets/nitrous.png"></div>
       </div>
     </div>
 
+    <!-- The footer is outside the container since it's not part of the chunk
+         we wish to be responsive -->
     <div id="footer" class="container">
       <div class="row">
         <div><a href="#">Home</a></div>

@@ -43,6 +43,7 @@ body {
 
 #testimony {
   font-size: 18px;
+  font-weight: lighter;
   color: #aaaaaa;
   margin: 20px 0;
 }
@@ -54,7 +55,7 @@ body {
 
 .customers img {
   padding: 25px 0;
-  max-width: 100px;
+  max-width: 125px;
 }
 
 .row-spacer {
@@ -67,10 +68,18 @@ body {
   font-weight: lighter;
   color: white;
   width: 100%;
-  padding: 20px;
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
 #footer a {
+  margin-left: 20px;
+  margin-top: 15px;
+  /* Allows us to apply a top margin. */
+  display: inline-block;
+}
+
+#footer a, a:visited {
   color: white;
-  margin-left: 15px;
+  text-decoration: none;
 }
