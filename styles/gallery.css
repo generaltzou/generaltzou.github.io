@@ -131,7 +131,7 @@
   max-height: 128px;
   z-index: 0;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+  /*-webkit-overflow-scrolling: touch;*/
 }
 
 .preview-mask .close-mask {
@@ -146,10 +146,6 @@
   background-size: 25px 25px;
   cursor: pointer;
   opacity: .75;
-}
-
-.preview-mask .close-mask:hover {
-  opacity: 1;
 }
 
 .preview-mask .show-youtube {
