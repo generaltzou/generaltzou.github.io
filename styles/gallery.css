@@ -124,7 +124,7 @@
   font-weight: lighter;
   font-size: 13px;
   margin-top: 10px;
-  max-height: 110px;
+  max-height: 128px;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
 }
