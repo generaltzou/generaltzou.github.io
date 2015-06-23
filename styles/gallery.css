@@ -6,6 +6,13 @@
   background-repeat: no-repeat;
 }
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #hero {
+    background-position: 0px -65px;
+  }
+}
+
 #movies-header {
   position: fixed;
   top: 0;
@@ -36,7 +43,7 @@
 }
 
 #movies-container {
-  margin-top: 35px;
+  margin-top: 15px;
 }
 
 .movie-thumbnail {
@@ -52,11 +59,32 @@
   margin-right: auto;
 }
 
+#dimmer {
+  position: fixed;
+  display: none;
+  background-color: rgba(0, 0, 0, .9);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#yt-player {
+  width: 100%;
+  height: 50%;
+  left: 0;
+  top: 30%;
+  position: absolute;
+}
+
+/****************************
+ Preview Mask styles below
+****************************/
 .preview-mask {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,.8);
+  background-color: rgba(0, 0, 0, .8);
   color: white;
   -webkit-transition: -webkit-transform 750ms;
   transition: transform 750ms;
@@ -69,29 +97,59 @@
   position: relative;
   width: 90%;
   left: 15px;
-  top: 25px;
+  top: 10px;
+  max-height: 60px;
+  overflow: hidden;
   font-weight: bold;
   font-size: 22px;
+}
+
+.preview-mask .cast {
+  font-weight: lighter;
+  position: relative;
+  width: 90%;
+  max-height: 35px;
+  overflow: hidden;
+  font-size: 12px;
+  left: 15px;
+  top: 10px;
+  color: #aaa;
 }
 
 .preview-mask .teaser {
   position: relative;
   width: 90%;
   left: 15px;
-  top: 25px;
+  top: 10px;
   font-weight: lighter;
   font-size: 13px;
   margin-top: 10px;
+  max-height: 90px;
+  overflow: scroll;
 }
 
-.preview-mask .more-info {
+.preview-mask .show-info {
   position: absolute;
-  width: 25px;
-  height: 25px;
-  left: 10px;
-  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  left: 0;
+  bottom: 5px;
+  background-position: center;
   background-image: url(../images/info.gif);
   background-repeat: no-repeat;
   background-size: 25px 25px;
+  cursor: pointer;
+}
+
+.preview-mask .show-youtube {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 35px;
+  bottom: 5px;
+  background-position: center;
+  background-image: url(../images/youtube.png);
+  background-repeat: no-repeat;
+  background-size: 35px 35px;
   cursor: pointer;
 }
