@@ -1,5 +1,4 @@
 MovieGallery = function() {
-  this.moviesMap = {};
   this.fetchData();
 };
 
@@ -32,8 +31,6 @@ MovieGallery.prototype.bindEventListeners = function() {
 
 MovieGallery.prototype.fetchData = function() {
   $.get('https://ga-movies.firebaseio.com/movies.json', function(movies) {
-    this.moviesMap = movies;
-
     // Prepare template.
     var template = $('#movie-template').html();
     var renderedOutput = '';
@@ -46,8 +43,5 @@ MovieGallery.prototype.fetchData = function() {
 
   }.bind(this));
 };
-
-// MovieGallery.prototype.showMovie = function() {  
-// }
 
 gallery = new MovieGallery();
