@@ -9,21 +9,21 @@ MovieGallery.prototype.YOUTUBE_IFRAME_SRC =
     'http://www.youtube.com/embed/{{id}}?controls=0&showinfo=0';
 
 MovieGallery.prototype.bindEventListeners = function() {
-  $('.movie-thumbnail').on('click', function(e) {
+  $('.movie-thumbnail').on('touchstart', function(e) {
     $(e.target).children('.preview-mask').css('transform', 'translateY(0)');
   });
 
-  $('.close-mask').on('click', function(e) {
+  $('.close-mask').on('touchstart', function(e) {
     $(e.target).parent().css('transform', 'translateY(-100%)');
   });
 
-  $('.show-youtube').on('click', function(e) {
+  $('.show-youtube').on('touchstart', function(e) {
     $('#dimmer').fadeIn(function() {
       $('#yt-player').attr('src', MovieGallery.prototype.YOUTUBE_IFRAME_SRC.replace('{{id}}', e.target.id));
     });
   });
 
-  $('#dimmer').on('click', function(e) {
+  $('#dimmer').on('touchstart', function(e) {
     $('#dimmer').hide();
     $('#yt-player').attr('src', 'about:blank');
   });
